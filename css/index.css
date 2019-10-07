@@ -70,10 +70,10 @@ h1, h2, h3, h4, h5 {
 .container{
 	
 
-	width: 850px;
+	width: 99%;
 	
-	margin: auto;
-	
+	margin: 1%;
+	border: solid red 1px;
 }
 
 
@@ -310,6 +310,129 @@ nav a{
     .MiPart1 .Features,.About{
         
         width: 48%;
-
+    }
 }
 
+
+@media(max-width: 500px){
+    
+    .head img{
+        height: 5.5vh;
+        margin: auto 0;
+     
+    }
+   
+     .head nav{
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        width: 100%;
+        height:auto;
+        text-align: center;
+        vertical-align: middle;
+        padding: auto;
+       
+    
+        
+    }
+
+    .head a{
+        height:10%;
+        padding: 4% 0;
+        font-size: 100%;
+        border-bottom: 1px solid black;
+        vertical-align: middle;
+        margin: 0;
+        
+    }
+
+    .head .aservices{
+        border-top: 1px solid black;
+    }
+
+    .head .aProduct{
+        border-bottom: 1px solid black;
+    }
+
+    .head .aAbout{
+        border-bottom: 1px solid black;
+    }
+    .TopPart{
+        height: auto;
+        padding: 0;
+    }
+
+    .Top{
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .TopPart .Top h1{
+        font-size: auto;
+        max-width: 95%;
+        margin: 0;
+        
+    }
+
+    .TopPart .Top .GetStarted{
+        font-size: auto;
+        padding:2% 0;
+        margin: 10% 30% 10% 30%;
+    }
+
+
+    .container{
+	
+
+        width: 99%;
+        
+        margin: 0 auto;
+        
+    }
+    
+    .MiPart{
+        vertical-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    .MiPart1, .MiPart2{
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        vertical-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+   .MiPart .MiPart1 .Features, .About {
+        width: 90%;
+        padding: 5%;
+        margin: auto 0;
+        
+        
+    }
+
+    .middle-img{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .MiPart .Mipart2 ,.Services,.Product,.Vision{
+        width: 90%;
+        padding: 5%;
+        margin: auto 0;
+       
+    }
+    
+    .MiPart .BPart div {
+        font-size: 13px;
+    }
+}
