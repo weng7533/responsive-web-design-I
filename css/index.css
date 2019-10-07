@@ -1,3 +1,313 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Your code starts here! */
+
+
+
+.container{
+	
+
+	width: 850px;
+	
+	margin: auto;
+	
+}
+
+
+
+
+.head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2% 0;
+
+}
+
+
+
+
+nav{
+	
+	color:rgb(197, 192, 192);
+	font-weight: bold;
+}
+
+nav a{
+	color:rgb(197, 192, 192);
+	margin: 0 20px;
+	text-decoration: none;
+}
+
+
+
+.TopPart{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+
+
+
+
+ .Top{
+	
+	width: 49%; 
+	margin: 3%;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.TopPart .Top h1{
+	font-size: 500%;
+}
+
+.TopPart .Top .GetStarted{
+	border: 1px solid black;
+	margin: 0px 80px;
+
+    padding: 10px 30px;
+
+
+}
+
+
+
+.MiPart{
+	display: flex;
+	flex-direction: column;
+	width: 100%; 
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.MiPart1{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2%;
+	padding: 2%;
+	
+	
+	
+
+}
+
+.middle-img {
+	display: flex;
+	width: 100%;
+}
+.MiPart2{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	width: 100%; 
+	margin: 2%;
+	padding: 2%;
+	align-items: flex-start;
+	
+}
+
+
+
+
+.BPart{
+	display: flex;
+	margin: 2%;
+	padding: 2%;
+
+}
+
+.Copyright{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.service-Top img { 
+	width: 100%;
+	padding: 2% 0;
+  }  
+
+
+.service-Top{
+	padding: 0 0 3% 0;
+	
+	margin: auto;
+}
+
+.service-Top h1{
+	padding: 2% 0;
+}
+
+.service-mid {
+	display: flex;
+	flex-flow: row wrap;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+	justify-content: space-between;
+	padding: 2% 0;
+
+}
+
+.service-mid-element{
+	background-color: rgb(197, 192, 192);
+	border: 1px solid black;
+	padding: 3%;
+	margin-top: 15px ;
+	margin-bottom: 10px;
+	width: 49%; 
+	
+}
+
+
+
+.service-mid-element button{
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: 3% 10%;
+	margin: 5% 0;
+
+	
+}
+
+.service-B{
+	
+	display: flex;
+	
+	justify-content: space-between;
+	
+	padding: 3% 0;
+	
+	width: 100%;
+}
+
+
+.service-BL p{
+	padding: 5% 0;
+}
+
+.service-BL ul{
+	padding: 5% 0;
+	
+}
+
+.service-BL li{
+
+	margin: 20px;
+	
+}
+
+
+
+@media(max-width: 800px){
+    .head{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .head nav,img{
+        padding: 2% 0;
+        
+    }
+    .head nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .TopPart {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .TopPart img{
+        display: none;
+    }
+
+    .TopPart .Top .GetStarted{
+        margin: 0px 29%;
+        padding: 1.9%;
+    }
+
+    .MiPart1 .Features,.About{
+        
+        width: 48%;
+
+}
+
