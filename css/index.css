@@ -294,6 +294,8 @@ nav a{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
+        padding-bottom: 1%;
     }
 
     .TopPart img{
@@ -301,7 +303,7 @@ nav a{
     }
 
     .TopPart .Top .GetStarted{
-        margin: 0px 29%;
+        margin: 10% 29% 0 29%;
         padding: 1.9%;
     }
 
