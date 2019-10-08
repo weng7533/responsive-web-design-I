@@ -65,15 +65,22 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-
+html{
+    width: 100%;
+}
 
 .container{
 	
 
-	width: 99%;
+	width: 100%;
 	
-	margin: 1%;
-	border: solid red 1px;
+	margin: 0;
+	/* border: solid red 1px; */
+}
+body{
+    width: 100%;
+        
+        margin: 0 0;
 }
 
 
@@ -168,7 +175,7 @@ nav a{
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
-	width: 100%; 
+	width: 98%; 
 	margin: 2%;
 	padding: 2%;
 	align-items: flex-start;
@@ -317,7 +324,8 @@ nav a{
 @media(max-width: 500px){
     
     .head img{
-        height: 5.5vh;
+        width: 33%;
+        
         margin: auto 0;
      
     }
@@ -388,10 +396,14 @@ nav a{
     .container{
 	
 
-        width: 99%;
+        width: 100%;
         
-        margin: 0 auto;
+        margin: 0 0;
         
+    }
+    .baby{
+        width: 100%;
+        height: auto;
     }
     
     .MiPart{
@@ -404,7 +416,7 @@ nav a{
     .MiPart1, .MiPart2{
         display: flex;
         flex-direction: column;
-        width: 99%;
+        width: 100%;
         vertical-align: center;
         justify-content: center;
         margin: 0;
@@ -412,7 +424,7 @@ nav a{
     }
 
    .MiPart .MiPart1 .Features, .About {
-        width: 90%;
+        width: 100%;
         padding: 5%;
         margin: auto 0;
         
@@ -426,13 +438,16 @@ nav a{
         height: auto;
     }
     .MiPart .Mipart2 ,.Services,.Product,.Vision{
-        width: 90%;
+        width: 100%;
         padding: 5%;
         margin: auto 0;
        
     }
+
+
     
     .MiPart .BPart div {
         font-size: 13px;
     }
+
 }
